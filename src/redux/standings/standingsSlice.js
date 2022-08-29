@@ -1,13 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const baseURL = 'https://api-football-standings.azharimm.site/leagues/eng.1/seasons/';
-
+const baseURL = 'https://api-football-standings.azharimm.site/leagues/eng.1/standings?season=';
+const endURL = '&sort=asc';
 const initialState = [];
 
-export const getSeasons = createAsyncThunk(
-  'seasons/getSeasons',
+export const getStandings = createAsyncThunk(
+  'seasons/getStandings',
   async () => {
-    const response = await fetch(baseURL, {
+    const response = await fetch(`${baseURL}${endURL}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -21,16 +21,16 @@ export const getSeasons = createAsyncThunk(
   },
 );
 
-export const seasonsSlice = createSlice({
-  name: 'seasons',
+export const standingsSlice = createSlice({
+  name: 'standings',
   initialState,
   reducers: {
   },
   extraReducers: (builder) => {
     // Add reducers for additional action types here, and handle loading state as needed
-    builder.addCase(getSeasons.fulfilled, (state, action) => action.payload.data.seasons);
+    builder.addCase(getStandings.fulfilled, (state, action) => action.payload.data);
   },
 });
 
 // Action creators are generated for each case reducer function
-export default seasonsSlice.reducer;
+export default standingsSlice.reducer;
