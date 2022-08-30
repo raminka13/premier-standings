@@ -1,0 +1,57 @@
+.seasons-container {
+  display: flex;
+  margin-top: 3.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.seasons-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  height: 15rem;
+  background-image: url(https://a.espncdn.com/i/leaguelogos/soccer/500-dark/23.png);
+  background-position: left bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.seasons-title h2 {
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: 2.5rem;
+  line-height: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.seasons-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.season-button {
+  grid-column: span 6;
+}
+
+@media screen and (min-width: 650px) {
+  .seasons-container {
+    max-width: 900px;
+    width: 70%;
+  }
+
+  .seasons-title h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .season-button {
+    grid-column: span 3;
+  }
+}
