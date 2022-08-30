@@ -1,11 +1,11 @@
 .seasons-container {
   display: flex;
   margin-top: 3.5rem;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .seasons-title {
@@ -13,11 +13,11 @@
   display: flex;
   justify-content: flex-end;
   text-align: right;
-  height: 15rem;
   background-image: url(https://a.espncdn.com/i/leaguelogos/soccer/500-dark/23.png);
   background-position: left bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  height: 180px;
 }
 
 .seasons-title h2 {
@@ -34,13 +34,56 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  gap: 2px;
+  margin-top: 3rem;
 }
 
 .season-button {
   grid-column: span 6;
+  height: 9rem;
+  border: 1.3px solid #202341;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#4c72b8, #2f3360);
 }
 
-@media screen and (min-width: 650px) {
+.season-year {
+  width: 100%;
+  padding-top: 1rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -5px;
+}
+
+.season-display {
+  width: 100%;
+  font-size: 0.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .seasons-container {
+    max-width: 900px;
+    width: 70%;
+  }
+
+  .seasons-title h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .season-button {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 720px) {
   .seasons-container {
     max-width: 900px;
     width: 70%;
@@ -53,5 +96,11 @@
 
   .season-button {
     grid-column: span 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .season-button {
+    grid-column: span 2;
   }
 }

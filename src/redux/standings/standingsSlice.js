@@ -4,23 +4,6 @@ const baseURL = 'https://api-football-standings.azharimm.site/leagues/eng.1/stan
 const endURL = '&sort=asc';
 const initialState = [];
 
-// export const getStandings = createAsyncThunk(
-//   'seasons/getStandings',
-//   async () => {
-//     const response = await fetch(`${baseURL}2022${endURL}`, {
-//       method: 'GET',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-
-//     });
-//     if (response.ok) {
-//       return response.json();
-//     }
-//     throw response;
-//   },
-// );
-
 export const getStandingsYear = createAsyncThunk(
   'seasons/getStandingsYear',
   async (year) => {

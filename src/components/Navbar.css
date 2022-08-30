@@ -17,4 +17,5 @@ nav {
   align-items: center;
   width: 90%;
   color: #fff;
+  max-width: 900px;
 }
