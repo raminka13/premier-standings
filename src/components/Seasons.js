@@ -17,7 +17,9 @@ const Seasons = () => {
   return (
     <div className="seasons-container">
       <div className="seasons-title">
-        <h2>Standings</h2>
+        <h2>
+          Premier League Standings
+        </h2>
       </div>
       <ul className="seasons-list">
         {seasonsList.map((season) => (
