@@ -47,6 +47,7 @@
   align-items: center;
   flex-wrap: wrap;
   background: linear-gradient(#4c72b8, #2f3360);
+  color: #fff;
 }
 
 .season-year {
