@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# Premier League Standings ⚽️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Mobile web app to follow scores and standings for the English Premier League, from 2001 season to now.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
-### `npm test`
+![](Seasons.png) ![](Standings.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Static Deploy
 
-### `npm run build`
+- [Live Demo](https://space-traverlers-raminka-nyame.netlify.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech ⌘⇧
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **HTML & CSS best practices:** Correct use of tags, elements, properties and syntax.
+- **GitHub flow:** Correct use of Branches for deployment and features development.
+- **Webpack:** Source development for production bundling.
+- **Linters Check:** Local and Pull Request Github workflows to check for stylistic errors, bugs and syntax errors in code.
+- **React:** Build on `React.js` framework with jsx.
+- **Redux:** Build on `Redux Toolkit` librarie to manage the app state.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Clone Repository
 
-### `npm run eject`
+- Copy this code on your CLI to clone the repository `$ git clone https://github.com/raminka13/premier-standings.git`
+- `cd premier-standings`
+- run `npm install` to install all the dependencies.
+- run `npm start` to open the app in your localServer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author ✍🏼
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👤 **Raul A Ospina** 🧑🏻‍💻
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- GitHub: [@raminka13](https://github.com/raminka13)
+- Twitter: [@raminka13](https://twitter.com/raminka13)
+- LinkedIn: [Raul Ospina](http://linkedin.com/in/raul-ospina)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Milestones
 
-## Learn More
+- **Milestone 1** Create-React-App, basic components, and Redux store . ✅
+- **Milestone 2** Use Redux in React components. ✅
+- **Milestone 3** Connect to API. ✅
+- **Milestone 4** Styling. ✅
+- **Milestone 5** Testing. ✅
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Contributions, issues, and feature requests are welcome!
+> Feel free to check the [issues page](https://github.com/raminka13/premier-standings/issues).
 
-### Code Splitting
+## Show your support 🦾
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## License 📝
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- This project is [MIT](LICENSE) licensed.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
