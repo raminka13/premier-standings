@@ -17,7 +17,12 @@ Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwad
 
 ## Static Deploy
 
-- [Live Demo](https://space-traverlers-raminka-nyame.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d502559-ef29-4eac-be9c-a98799ab9fad/deploy-status)](https://app.netlify.com/sites/leagues-standings-raminka/deploys)
+- [Netlify](https://leagues-standings-raminka.netlify.app/)
+
+## Static Deploy
+[Video Presentation](https://youtu.be/Hy242UqNOts)
+
 
 ## Tech ⌘⇧
 
