@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navigation() {
+  const location = useLocation();
   const links = [
     {
       id: 1,
@@ -17,7 +18,7 @@ function Navigation() {
           {links.map((link) => (
             <li className="NavLink" key={link.id}>
               <NavLink to={link.path}>
-                {link.text}
+                {location.pathname === '/' ? '⚽️ HOME' : '◀︎ Back'}
               </NavLink>
             </li>
           ))}
