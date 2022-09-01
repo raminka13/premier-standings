@@ -35,9 +35,9 @@ const Seasons = () => {
           placeholder="2001-2022"
           onInput={(e) => setYearInput(e.target.value)}
         />
-        {/* <Link to="standings" value={yearInput} state={yearInput} className="season-year">
+        <Link to="standings" value={yearInput} state={yearInput} className="season-link">
           🔎
-        </Link> */}
+        </Link>
       </form>
       <ul className="seasons-list">
         {seasonsListFilter.map((season) => (

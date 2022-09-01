@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 100vw;
+  min-height: 810px;
   background: linear-gradient(#2f3360, #4c72b8);
 }
 
