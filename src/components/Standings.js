@@ -14,7 +14,7 @@ function Standings() {
     if (standingsList) {
       dispatch(getStandingsYear(year));
     }
-  }, []);
+  }, [dispatch, standingsList, year]);
 
   return (
     <div className="standings-container">

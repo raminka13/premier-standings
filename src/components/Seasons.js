@@ -12,7 +12,7 @@ const Seasons = () => {
     if (!seasonsList.data) {
       dispatch(getSeasons());
     }
-  }, []);
+  }, [dispatch, seasonsList]);
 
   return (
     <div className="seasons-container">
