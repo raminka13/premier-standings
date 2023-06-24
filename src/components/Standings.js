@@ -35,14 +35,14 @@ function Standings() {
         <tbody>
           {standingsList.map((stand) => (
             <tr key={stand.team.id}>
-              <td className="data">{stand.stats[8].value}</td>
+              <td className="data">{stand.stats[10].value}</td>
               <td className="data"><img src={stand.team.logos[0].href} alt={stand.team.name} /></td>
               <td className="data-name">{stand.team.name}</td>
-              <td className="data">{stand.stats[3].value}</td>
               <td className="data">{stand.stats[0].value}</td>
-              <td className="data">{stand.stats[2].value}</td>
+              <td className="data">{stand.stats[7].value}</td>
+              <td className="data">{stand.stats[6].value}</td>
               <td className="data">{stand.stats[1].value}</td>
-              <td className="data points">{stand.stats[6].value}</td>
+              <td className="data points">{stand.stats[3].value}</td>
             </tr>
           ))}
         </tbody>
