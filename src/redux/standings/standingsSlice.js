@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const baseURL = 'https://api-football-standings.azharimm.site/leagues/eng.1/standings?season=';
+const baseURL = 'https://api-football-standings.azharimm.dev/leagues/eng.1/standings?season=';
 const endURL = '&sort=asc';
 const initialState = [];
 

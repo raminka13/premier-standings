@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d502559-ef29-4eac-be9c-a98799ab9fad/deploy-status)](https://app.netlify.com/sites/leagues-standings-raminka/deploys)
 
 ---
 
