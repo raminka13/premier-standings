@@ -9,13 +9,68 @@
   max-width: 900px;
 }
 
-.standings-container h2 {
+.standings-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  max-width: 810px;
+}
+
+.standings-header-title {
+  flex: 3;
+  width: 100%;
+}
+
+.standings-header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standings-header-img img {
+  width: 100%;
+  max-width: 270px;
+}
+
+.standings-header-title h1 {
   width: 100%;
   text-align: center;
-  font-size: 9rem;
+  font-size: 8.1rem;
   font-weight: 600;
   color: var(--color4);
   letter-spacing: -12px;
+  display: none;
+}
+
+.standings-header-info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.standings-header-info h3 {
+  text-align: right;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: var(--color4);
+  letter-spacing: -0.5px;
+}
+
+.standings-header-info h4 {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color4);
+  opacity: 0.8;
+  letter-spacing: -0.5px;
 }
 
 table {
@@ -86,4 +141,29 @@ tr:hover td > img {
 .points {
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .standings-header {
+    flex-direction: row;
+  }
+
+  .standings-header-img img {
+    max-width: 200px;
+  }
+
+  .standings-header-title h1 {
+    display: block;
+  }
+
+  .standings-header-info {
+    align-items: end;
+    margin: 0;
+  }
+
+  .standings-header-info h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+  }
 }
