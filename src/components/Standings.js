@@ -8,17 +8,34 @@ function Standings() {
   const dispatch = useDispatch();
   const location = useLocation();
   const year = location.state;
-  const standingsList = useSelector((state) => state.standings);
+  const standingsList = useSelector((state) => state.standings.standings);
+  const name = useSelector((state) => state.standings.name);
+  const seasonDisplay = useSelector((state) => state.standings.seasonDisplay);
+  const season = useSelector((state) => state.standings.season);
 
   useEffect(() => {
-    if (standingsList) {
+    if (year) {
       dispatch(getStandingsYear(year));
     }
-  }, [dispatch, standingsList, year]);
+  }, [dispatch, year]);
 
   return (
     <div className="standings-container">
-      <h2>{year}</h2>
+      <div className="standings-header">
+        <div className="standings-header-img">
+          <img
+            src="https://a.espncdn.com/i/leaguelogos/soccer/500-dark/23.png"
+            alt="Premier League"
+          />
+        </div>
+        <div className="standings-header-title">
+          <h1>{season}</h1>
+        </div>
+        <div className="standings-header-info">
+          <h4>{name}</h4>
+          <h3>{seasonDisplay}</h3>
+        </div>
+      </div>
       <table>
         <thead>
           <tr id="head">
@@ -36,7 +53,9 @@ function Standings() {
           {standingsList.map((stand) => (
             <tr key={stand.team.id}>
               <td className="data">{stand.stats[10].value}</td>
-              <td className="data"><img src={stand.team.logos[0].href} alt={stand.team.name} /></td>
+              <td className="data">
+                <img src={stand.team.logos[0].href} alt={stand.team.name} />
+              </td>
               <td className="data-name">{stand.team.name}</td>
               <td className="data">{stand.stats[0].value}</td>
               <td className="data">{stand.stats[7].value}</td>
