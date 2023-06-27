@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { getSeasons } from '../redux/seasons/seasonsSlice';
+import { getStandingsYear } from '../redux/standings/standingsSlice';
 import './Seasons.css';
 
 const Seasons = () => {
@@ -9,10 +10,9 @@ const Seasons = () => {
   const seasonsList = useSelector((state) => state.seasons);
 
   useEffect(() => {
-    if (!seasonsList.data) {
-      dispatch(getSeasons());
-    }
-  }, [dispatch, seasonsList]);
+    dispatch(getSeasons());
+    dispatch(getStandingsYear(2021));
+  }, [dispatch]);
 
   return (
     <div className="seasons-container">
