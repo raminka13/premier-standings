@@ -28,7 +28,7 @@ export const standingsSlice = createSlice({
   },
   extraReducers: (builder) => {
     // Add reducers for additional action types here, and handle loading state as needed
-    builder.addCase(getStandingsYear.fulfilled, (state, action) => action.payload.data.standings);
+    builder.addCase(getStandingsYear.fulfilled, (state, action) => action.payload.data);
   },
 });
 
